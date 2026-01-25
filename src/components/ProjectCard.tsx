@@ -14,7 +14,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     <span className="material-symbols-outlined text-[20px]">{project.icon}</span>
                 </div>
                 <div className="flex flex-wrap gap-1.5 justify-end">
-                    {project.tags.map(tag => (
+                    {project.tags.filter(tag => tag !== "featured").map(tag => (
                         <Link key={tag} href={`/tags/${tag}`} className="z-20">
                             <Badge variant="secondary" className="px-2 py-0.5 rounded-md text-[9px] font-bold uppercase tracking-tight hover:bg-primary/10 hover:text-primary transition-colors cursor-pointer">{tag}</Badge>
                         </Link>

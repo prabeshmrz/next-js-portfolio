@@ -20,7 +20,7 @@ export function PostListItem({ post }: PostListItemProps) {
                             {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: '2-digit', day: '2-digit' })}
                         </span>
                         <span className="w-1 h-1 rounded-full bg-border"></span>
-                        <div className="flex gap-2">
+                        <div className="flex flex-wrap justify-end gap-2">
                             {post.tags.map(tag => (
                                 <Link key={tag} href={`/tags/${tag}`} className="z-20">
                                     <Badge variant="secondary" className="px-2 py-0.5 rounded bg-primary/5 text-primary uppercase text-[10px] font-bold transition-colors hover:bg-primary/10 cursor-pointer">{tag}</Badge>

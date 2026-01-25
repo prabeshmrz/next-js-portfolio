@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio: Adaptive Software Engineer
 
-## Getting Started
+A modern, content-driven portfolio and blog built with **Next.js 15**, **Tailwind CSS**, and **Shadcn UI**. This project is designed for software engineers who want a high-performance, aesthetically pleasing site that is easy to manage via Markdown.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 15 (App Router)**: Leveraging the latest React features and server-side rendering for optimal performance.
+- **Markdown-Powered Content**: Manage your projects, blog posts, and profile information entirely through `.md` files. No database required.
+- **Dynamic Search & Filtering**: Built-in search engine to filter projects and writings by technology, title, or description.
+- **Tag-Based Navigation**: Discover related content effortlessly through a unified tagging system.
+- **Fully Responsive & Adaptive**: Seamless transition between desktop (permanent sidebar) and mobile (sheet-based drawer) navigation.
+- **Dark Mode Support**: Aesthetic dark and light themes powered by `next-themes`.
+- **Modern UI Components**: Leverages **Shadcn UI** for high-quality, accessible interactive elements.
+- **SEO Optimized**: Pre-configured meta tags, semantic HTML, and lightning-fast load times.
+
+## 📂 Project Structure
+
+```text
+├── content/              # Markdown files (Source of truth)
+│   ├── blog/             # Writings and notes
+│   ├── projects/         # Engineering projects
+│   └── info/             # Profile, experience, and education metadata
+├── src/
+│   ├── app/              # Next.js App Router (Pages & Layouts)
+│   ├── components/       # Reusable React components
+│   ├── lib/              # Utility functions and content parsing logic
+│   └── styles/           # Global CSS and Tailwind configurations
+└── public/               # Static assets (images, icons, etc.)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js 15](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/)
+- **Content Parsing**: [Gray-matter](https://github.com/jonschlinkert/gray-matter) & [React-markdown](https://github.com/remarkjs/react-markdown)
+- **Icons**: [Material Symbols](https://fonts.google.com/icons) & [Lucide React](https://lucide.dev/)
+- **Type Safety**: TypeScript
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔧 Getting Started
 
-## Learn More
+### Prerequisites
 
-To learn more about Next.js, take a look at the following resources:
+- Node.js (v18 or later)
+- npm or yarn
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Deploy on Vercel
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📝 Managing Content
+
+To update your portfolio, simply edit the Markdown files in the `content/` directory.
+
+- **Profile Info**: Edit `content/info/profile.md` to change your name, role, bio, and social links.
+- **Projects**: Add new `.md` files to `content/projects/`. Ensure you include the necessary frontmatter (title, tags, icon, links).
+- **Blog Posts**: Add new `.md` files to `content/blog/`. You can mark posts as `draft: true` to prevent them from showing up in production.
+
+---
+
+Built with ❤️ by Prabesh Maharjan.

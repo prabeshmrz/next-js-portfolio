@@ -1,0 +1,36 @@
+---
+name: "Prabesh Maharjan"
+role: "Software Engineer"
+location: "Kathmandu, Nepal"
+headline: "Hi, I'm Prabesh"
+bio: "I'm an Adaptive Software Engineer with a background in Information Management, based on Kathmandu, Nepal. I specialize in providing efficient and scalable software solutions through Java development, Agile methodologies, and modern web frameworks like Spring Boot and React" 
+avatar: "/profile.jpeg"
+email: "prabeshmrz.pm@gmail.com"
+calendly: "https://calendly.com/prabeshmrz-pm/30min"
+social:
+  github: "prabeshmrz"
+  linkedin: "prabesh-maharjan-04294a16b"
+  instagram: "prabesh_mrzn"
+  facebook: "prabeshmrz"
+skills:
+  - name: "Java / Spring Boot"
+    icon: "code"
+  - name: "NextJS / React"
+    icon: "javascript"
+  - name: "PostgreSQL / MySQL"
+    icon: "database"
+  - name: "AWS / Docker"
+    icon: "cloud"
+  - name: "Git"
+    icon: "rebase"
+stats:
+  - label: "Years Exp."
+    value: "5+"
+  - label: "Client Projects"
+    value: "20+"
+  - label: "Uptime Focus"
+    value: "99.9%"
+bio_extended:
+  - "I am a versatile software engineer with an advanced degree in Information Technology and a foundation in Information Management. My primary objective is to deliver efficient and adaptive solutions. I remain dedicated to continuous learning to solve evolving technical challenges."
+  - "My career spans various roles providing a comprehensive view of the development lifecycle. I have extensive experience operating within Agile environments to ensure collaborative and effective project delivery. My expertise is rooted in full-stack development. I focus on bridging the gap between technical execution and strategic planning to drive successful operations."
+---

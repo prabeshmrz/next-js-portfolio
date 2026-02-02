@@ -50,6 +50,7 @@ export interface BlogPost {
     description: string;
     draft?: boolean;
     content?: string;
+    readingTime?: string;
 }
 
 export interface ExperienceItem {

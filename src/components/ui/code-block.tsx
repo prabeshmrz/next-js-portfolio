@@ -30,7 +30,7 @@ export function CodeBlock({ language, children, className, ...props }: CodeBlock
     const languageName = language?.replace("language-", "") || "text";
 
     return (
-        <div className={cn("relative group rounded-lg bg-zinc-950 my-6 overflow-hidden", className)} {...props}>
+        <div className={cn("relative group rounded-lg bg-zinc-950 my-6 overflow-hidden grid min-w-0", className)} {...props}>
             <div className="flex items-center justify-between px-4 py-2 border-b border-border/40 bg-zinc-900/50">
                 <span className="text-xs font-mono font-medium text-muted-foreground uppercase">
                     {languageName}
@@ -47,7 +47,7 @@ export function CodeBlock({ language, children, className, ...props }: CodeBlock
                     )}
                 </button>
             </div>
-            <div className="p-4 overflow-x-auto">
+            <div className="p-4 overflow-auto max-h-[500px] w-full">
                 <pre className="!bg-transparent !p-0 !m-0 border-none">
                     <code ref={codeRef} className={cn("font-mono text-sm", language)}>
                         {children}

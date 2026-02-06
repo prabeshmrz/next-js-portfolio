@@ -40,6 +40,7 @@ export interface Project {
         case_study: string;
         source: string;
     };
+    content?: string;
 }
 
 export interface BlogPost {
@@ -194,5 +195,19 @@ export function getContentByTag(tag: string) {
     );
 
     return { projects, posts };
+}
+
+export function getProjectBySlug(slug: string): Project | null {
+    const fullPath = path.join(contentDirectory, "projects", `${slug}.md`);
+    if (!fs.existsSync(fullPath)) {
+        return null;
+    }
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data, content } = matter(fileContents);
+    return {
+        slug,
+        ...data,
+        content,
+    } as Project;
 }
 

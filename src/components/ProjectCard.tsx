@@ -28,9 +28,9 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 {project.description}
             </p>
             <div className="flex items-center gap-3 pt-3 border-t border-border">
-                {project.links.case_study !== "#" && (
+                {project.links.case_study && project.links.case_study !== "#" && (
                     <Link
-                        href={project.links.case_study}
+                        href={project.links.case_study.startsWith("http") ? project.links.case_study : `/projects/${project.links.case_study}`}
                         className="text-[10px] font-bold uppercase tracking-wider flex items-center gap-1 hover:text-primary transition-colors text-muted-foreground"
                     >
                         <span className="material-symbols-outlined text-[14px]">link</span> Case Study
